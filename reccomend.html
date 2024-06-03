@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reccomend ®️</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 20cap;
+      }
+    
+      .collapse {
+        padding-left: 35cap;
+      }
+    
+      .nav-item {
+        padding: 10px;
+      }
+    /* 
+    .form-signin {
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px; /* Add some top margin for spacing */
+    
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+    
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        input:focus + label {
+            color: #4caf50;
+        }
+    
+        body {
+            background-color: #cefad0;
+        }
+        #statename {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 60px;
+        }
+        #one{
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+        }
+        #two {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+        }
+        #three {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+        }
+        #four {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+        }
+        #five {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+        }
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Lato:wght@900&family=Mukta:wght@700&family=Poppins:wght@200;500&family=Recursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h2  style="color: #17B169;">AGRI-INNOVATE</h2></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><h5>HOME</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ourfarm.html"><h5>MY FARM</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./growbusiness.html"><h5>GROW BUSINESS</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./schemes.html"><h5>SCHEMES</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./reccomend.html"><h5>RECOMMENDATIONS</h5></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 750;">LOGIN</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./loginpage.html">Your Profile & Login</a></li>
+                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                      <li><a class="dropdown-item" href="./help_and_supp.html">Help and Support</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <br><br><br>
+    <section>
+        <form id="submitForm">
+            <label for="textInput"><h1>Enter Your State</h1></label>
+            <input type="text" id="textInput" name="textInput" required>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </section>
+    <section>
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 id="statename" class="display-5 fw-bold text-body-emphasis">Your State</h1>
+            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                <div id="one">Major Crops</div><br>
+                ----------------------------------------------------------------------------------------------------------------------------
+                <div id="two">Fertilizers Needed</div><br>
+                ----------------------------------------------------------------------------------------------------------------------------
+                <div id="three">Duration</div><br>
+                ----------------------------------------------------------------------------------------------------------------------------
+                <div id="four">Best Time To Sell</div><br>
+              </p>
+
+            </div>
+            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+          </div>
+    </section>
+    <footer>© Copyright, AGRI-INNOVATE(PSIT)</footer>
+    <span>
+      <div class="translate" id="google_translate_element"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}
+      </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </span>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      
+
+function submitForm() {
+  var inputValue = document.getElementById("textInput").value;
+  var statename = document.getElementById("statename");
+  statename.innerHTML = inputValue;
+
+  var one = document.getElementById("one");
+  var two = document.getElementById("two");
+  var three = document.getElementById("three");
+  var four = document.getElementById("four");
+  var five = document.getElementById("five");
+
+  if (inputValue == "Uttar Pradesh") {
+      one.innerHTML = 
+  "&emsp;&emsp;<strong>CROPS:</strong><br>" +"<br>"+
+  "&emsp;&emsp;<strong>Rice</strong><br>" +
+  "&emsp;&emsp;<strong>Wheat</strong><br>" +
+  "&emsp;&emsp;<strong>Sugarcane</strong><br>" +
+  "&emsp;&emsp;<strong>Pulses (lentils, chickpeas, peas)</strong><br>" +
+  "&emsp;&emsp;<strong>Oilseeds (sunflower, mustard, soybeans)</strong><br>" +
+  "&emsp;&emsp;<strong>Fruits (mangoes, guavas, bananas, citrus fruits)</strong><br>" +
+  "&emsp;&emsp;<strong>Vegetables (potatoes, onions, tomatoes, etc.)</strong><br>" +
+  "&emsp;&emsp;<strong>Jute</strong>";
+
+
+  two.innerHTML = 
+  "&emsp;&emsp;<strong>FERTILIZERS:</strong><br>" +"<br>"+
+  "<strong>Rice:</strong><br>" +
+  "&emsp;&emsp;Nitrogenous fertilizers (urea, ammonium sulfate)<br>" +
+  "&emsp;&emsp;Phosphatic fertilizers (single superphosphate, diammonium phosphate)<br><br>" +
+
+  "<strong>Wheat:</strong><br>" +
+  "&emsp;&emsp;Nitrogenous fertilizers (urea, ammonium sulfate)<br>" +
+  "&emsp;&emsp;Phosphatic fertilizers (diammonium phosphate)<br>" +
+  "&emsp;&emsp;Potash (potassium chloride)<br><br>" +
+
+  "<strong>Sugarcane:</strong><br>" +
+  "&emsp;&emsp;Nitrogenous fertilizers (urea)<br>" +
+  "&emsp;&emsp;Phosphatic fertilizers (single superphosphate, diammonium phosphate)<br>" +
+  "&emsp;&emsp;Potash (potassium chloride)<br><br>" +
+
+  "<strong>Pulses:</strong><br>" +
+  "&emsp;&emsp;Nitrogen-fixing bacteria (Rhizobium) for legumes like lentils and chickpeas<br>" +
+  "&emsp;&emsp;Phosphatic fertilizers (diammonium phosphate)<br><br>" +
+
+  "<strong>Oilseeds:</strong><br>" +
+  "&emsp;&emsp;Nitrogenous fertilizers (urea)<br>" +
+  "&emsp;&emsp;Phosphatic fertilizers (diammonium phosphate)<br>" +
+  "&emsp;&emsp;Potash (potassium chloride)<br><br>" +
+
+  "<strong>Fruits:</strong><br>" +
+  "&emsp;&emsp;Organic manures<br>" +
+  "&emsp;&emsp;Balanced NPK fertilizers (containing nitrogen, phosphorus, and potassium)<br><br>" +
+
+  "<strong>Vegetables:</strong><br>" +
+  "&emsp;&emsp;Nitrogenous fertilizers (urea)<br>" +
+  "&emsp;&emsp;Phosphatic fertilizers (diammonium phosphate)<br>" +
+  "&emsp;&emsp;Potash (potassium chloride)<br><br>" +
+
+  "<strong>Jute:</strong><br>" +
+  "&emsp;&emsp;Nitrogenous fertilizers (urea)<br>" +
+  "&emsp;&emsp;Phosphatic fertilizers (diammonium phosphate)";
+
+
+
+
+
+
+  three.innerHTML =
+  "&emsp;&emsp;<strong>DURATION:</strong><br>" +"<br>"+
+  "<strong>Rice:</strong> Planting often occurs in the early summer, around June, and harvesting takes place in the late fall or early winter, around October to December.<br><br>" +
+  "<strong>Wheat:</strong> Wheat is typically planted in the winter season (rabi crop) around November to December and harvested in the spring, around April to May.<br><br>" +
+  "<strong>Sugarcane:</strong> Sugarcane is a perennial crop with a growth cycle that can span 12 to 18 months, and harvesting often occurs in late winter or early spring.<br><br>" +
+  "<strong>Pulses (lentils, chickpeas, peas):</strong> Planting may occur in the winter season (rabi crop) or during the summer (kharif crop), with harvesting typically in spring or early summer.<br><br>" +
+  "<strong>Oilseeds (sunflower, mustard, soybeans):</strong> Planting times vary; for example, sunflower is often planted in late spring or early summer, and harvesting can occur in late summer or early fall.<br><br>" +
+  "<strong>Fruits (mangoes, guavas, bananas, citrus fruits):</strong> Fruit crops have diverse growing seasons. For example, mangoes are often harvested in the summer, guavas in late summer to early fall, and bananas throughout the year depending on the variety.<br><br>" +
+  "<strong>Vegetables (potatoes, onions, tomatoes, etc.):</strong> Planting and harvesting times for vegetables vary widely. For instance, potatoes may be planted in the spring and harvested in the summer.<br><br>" +
+  "<strong>Jute:</strong> Jute is typically harvested after 120 to 150 days of sowing, which could fall in the late summer or early fall.";
+
+
+  four.innerHTML =
+  "&emsp;&emsp;<strong>TIME TO SELL:</strong><br>" +"<br>"+
+  "<strong>Rice:</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: Post-harvest season, typically from late autumn to early winter. Prices may vary based on local demand and storage capacity.<br><br>" +
+
+  "<strong>Wheat:</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: After the spring harvest, around late spring to early summer. Prices may be influenced by factors such as storage availability and global market conditions.<br><br>" +
+
+  "<strong>Sugarcane:</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: After the harvest, which can extend from late winter to early spring. Sugar mills may have specific procurement periods.<br><br>" +
+
+  "<strong>Pulses (lentils, chickpeas, peas):</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: Post-harvest, during the spring or early summer. Prices may be influenced by market demand and storage capacity.<br><br>" +
+
+  "<strong>Oilseeds (sunflower, mustard, soybeans):</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: After the harvest, which can occur in late summer or early fall. Prices may be influenced by global market trends.<br><br>" +
+
+  "<strong>Fruits (mangoes, guavas, bananas, citrus fruits):</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: Varied based on the specific fruit. For example, mangoes are often best sold in summer, while bananas may have a more consistent market throughout the year.<br><br>" +
+
+  "<strong>Vegetables (potatoes, onions, tomatoes, etc.):</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: Post-harvest, timing can vary based on the specific vegetable. Prices may be influenced by seasonal demand and local market conditions.<br><br>" +
+
+  "<strong>Jute:</strong><br>" +
+  "&emsp;&emsp;Best Time to Sell: After harvesting, which can be in late summer or early fall. Prices may be influenced by factors such as fiber quality and demand.";
+  } else if (inputValue == "Maharashtra") {
+      one.innerHTML = "Crops grown in Maharashtra";
+      two.innerHTML = "Fertilizers Needed for crops in Maharashtra";
+      three.innerHTML = "Duration of crops in Maharashtra";
+      four.innerHTML = "Best Time To Sell crops in Maharashtra";
+
+  } else if (inputValue == "Assam") {
+      one.innerHTML = "Crops grown in Assam";
+      two.innerHTML = "Fertilizers Needed for crops in Assam";
+      three.innerHTML = "Duration of crops in Assam";
+      four.innerHTML = "Best Time To Sell crops in Assam";
+
+  } else if (inputValue == "Tamil Nadu") {
+      one.innerHTML = "Crops grown in Tamil Nadu";
+      two.innerHTML = "Fertilizers Needed for crops in Tamil Nadu";
+      three.innerHTML = "Duration of crops in Tamil Nadu";
+      four.innerHTML = "Best Time To Sell crops in Tamil Nadu";
+  } else {
+      one.innerHTML = "No data available for this state";
+      two.innerHTML = "EMPTY";
+      three.innerHTML = "EMPTY";
+      four.innerHTML = "EMPTY";
+      five.innerHTML = "EMPTY";
+  }
+}
+
+    </script>
+</body>
+</html>
